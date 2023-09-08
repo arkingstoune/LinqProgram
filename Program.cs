@@ -48,4 +48,5 @@ foreach(char i in LINQStringArray2){
 int[] CelPosled4 = new[] {2,3,5,-7,4, -4};
 string[] LINQStringArray3 = (
     from stringArr in CelPosled4
+    where stringArr % 2 != 0 
     select stringArr.ToString()).ToArray();
